@@ -19,24 +19,29 @@
 
                 <!-- Header -->
                     <header id="header">
+                        <div class="language align-right">
+                            <a href="#" id="language-tr">TR</a>
+                            <a href="#" id="language-en">EN</a>
+                        </div>
                         <div class="logo">
                             <span class="icon fa-gem"></span>
                         </div>
                         <div class="content">
                             <div class="inner">
-                                <p>Together with their families</p>
+                                
+                                <p data-translate="_welcome1"></p>
                                 <h1>Bahriye & Stephen</h1>
-                                <p>Request the pleasure of your company at their wedding ceremony</p>
-                                <p>7th December 2019</p>
-                                <p>Bosphorus Palace Hotel, Istanbul<p>
+                                <p data-translate="_welcome2"></p>
+                                <p data-translate="_welcome3"></p>
+                                <p data-translate="_welcome4"><p>
                             </div>
                         </div>
                         <nav>
                             <ul>
-                                <li><a href="#venue">Venue</a></li>
-                                <li><a href="#timeline">Timeline</a></li>
+                                <li><a href="#venue" data-translate="_venue"></a></li>
+                                <li><a href="#timeline" data-translate="_timeline">Timeline</a></li>
                                 <!--<li><a href="#seating">Seating</a></li>-->
-                                <li><a href="#rsvp">RSVP</a></li>
+                                <li><a href="#rsvp" data-translate="_rsvp">RSVP</a></li>
                                 <!--<li><a href="#elements">Elements</a></li>-->
                             </ul>
                         </nav>
@@ -47,22 +52,23 @@
 
                         <!-- Venue -->
                             <article id="venue">
-                                <h2 class="major">Venue</h2>
+                                <h2 class="major" data-translate="_venue"></h2>
                                 <span class="image main"><img src="images/bospal.jpg" alt="Bosphorus Palace Hotel" /></span>
-                                <p>The Debreli Ismail Pasha Seaside Mansion, built in 1879 and reconstructed in 1993, is a beautiful examples of Neo-Ottoman architecture. Located on the asian shore of the Bosphorus, the building is 300 square meters on 1486 square meters of land.</p>
-                                <p><span class="fa fa-tshirt"></span>&nbsp;&nbsp;<b>Dress code</b> - formal</p>
-                                <div><span class="fa fa-link"></span>&nbsp;&nbsp;&nbsp;<a href="http://www.bosphoruspalace.com/"><b>Bosphorus Palace Hotel</b></a></div>
-                                <div><span class="fa fa-location-arrow"></span>&nbsp;&nbsp;&nbsp;<a href="https://goo.gl/maps/6nstQuBGagCebdrQ8"><b>Bosphorus Palace Hotel</b></a> - Yalıboyu Caddesi No: 64 P.K. : 34676 Beylerbeyi, Istanbul</div>
-                                <div><span class="fa fa-map-marker"></span>&nbsp;&nbsp;&nbsp;<a href="https://goo.gl/maps/CtcNVVqCf4Fj8bWT9">41° 2' 43.43'' N  29° 2' 45.86'' E</a></div>
-                                <div><span class="fa fa-street-view"></span>&nbsp;&nbsp;&nbsp;<a href="https://www.google.com/maps/@41.0448194,29.0464382,3a,75y,11.48h,84.85t/data=!3m7!1e1!3m5!1sPSF-J5GqIQyVlitlADA0Nw!2e0!5s20180401T000000!7i13312!8i6656">Street View</a></div>
-                                <div><span class="fa fa-car"></span>&nbsp;&nbsp;&nbsp;Free valet parking is available for our guests</div>
+                                <p data-translate="_venue_blurb"></p>
+                                <div><span class="lang_bullet fa fa-tshirt"></span><div class="lang_text" data-translate="_venue_dress"></div></div>
+                                <p></p>
+                                <div><span class="lang_bullet fa fa-link"></span><a href="http://www.bosphoruspalace.com/"><b>Bosphorus Palace Hotel</b></a></div>
+                                <div><span class="lang_bullet fa fa-location-arrow"></span><a href="https://goo.gl/maps/6nstQuBGagCebdrQ8"><b>Bosphorus Palace Hotel</b></a> - Yalıboyu Caddesi No: 64 P.K. : 34676 Beylerbeyi, Istanbul</div>
+                                <div><span class="lang_bullet fa fa-map-marker"></span><a href="https://goo.gl/maps/CtcNVVqCf4Fj8bWT9">&nbsp;41° 2' 43.43'' N  29° 2' 45.86'' E</a></div>
+                                <div><span class="lang_bullet fa fa-street-view"></span><a href="https://www.google.com/maps/@41.0448194,29.0464382,3a,75y,11.48h,84.85t/data=!3m7!1e1!3m5!1sPSF-J5GqIQyVlitlADA0Nw!2e0!5s20180401T000000!7i13312!8i6656" data-translate="_venue_streetview"></a></div>
+                                <div><span class="lang_bullet fa fa-car"></span><div class="lang_text" data-translate="_venue_parking"></div></div>
                                 <p></p>
                             </article>
 
                         <!-- Timeline -->
                             <article id="timeline">
                                 <div class="align-center">
-                                    <h2 class="">Timeline & Menu</h2>
+                                    <h2 class="" data-translate="_timeline2"></h2>
                                     <p><b>15:00 - 20:00</b></p>
                                     <hr />
                                         <span class="brands fa fa-glass-martini"></span>
@@ -89,6 +95,7 @@
                             </article>
 
                         <!-- Elements -->
+                        <!--
                             <article id="seating">
                                 <h2 class="major">Seating</h2>
                                     <div class="table-wrapper">
@@ -133,16 +140,17 @@
                                         </table>
                                     </div>
                             </article>
+                        -->
 
                             <!-- RSVP -->
                                 <article id="rsvp">
-                                    <h2 class="major">RSVP</h2>
+                                    <h2 class="major" data-translate="_rsvp">RSVP</h2>
 
-                                    <div><span class="fab fa-apple"></span>&nbsp;&nbsp;&nbsp;&nbsp;<a href="cal/istwed.ics">Add to Apple Calendar</a></div>
+                                    <div><span class="fab fa-apple"></span>&nbsp;&nbsp;&nbsp;&nbsp;<a href="calendar/istwed.ics">Add to Apple Calendar</a></div>
                                     <div><span class="fab fa-google"></span>&nbsp;&nbsp;&nbsp;<a href="https://www.google.com/calendar/render?action=TEMPLATE&text=Bahris%20%26%20Ste's%20Wedding&dates=20191207T120000Z%2F20191207T170000Z&details=Marriage%20of%20Bahriye%20Ilhan%20%26%20Stephen%20Jones&location=Bosphorus%20Palace%20Hotel%2C%20Yal%C4%B1boyu%20Cd.%20No%3A64%2C%2034676%20%C3%9Csk%C3%BCdar%2F%C4%B0stanbul%2C%20Turkey">Add to Google Calendar</a></div>
-                                    <div><span class="fab fa-microsoft"></span>&nbsp;&nbsp;&nbsp;<a href="cal/istwed.vcs">Add to Microsoft Calendar</a></div>
+                                    <div><span class="fab fa-microsoft"></span>&nbsp;&nbsp;&nbsp;<a href="calendar/istwed.vcs">Add to Microsoft Calendar</a></div>
                                     <p></p>
-                                    <div><span class="fa fa-envelope"></span>&nbsp;&nbsp;&nbsp;b.@ | s.@</div>
+                                    <div><span class="fa fa-envelope"></span>&nbsp;&nbsp;&nbsp;bosphorus.wedding.ist@gmail.com</div>
                                 </article>
                                 
                     </div>
@@ -164,7 +172,7 @@
             <script src="assets/js/breakpoints.min.js"></script>
             <script src="assets/js/util.js"></script>
             <script src="assets/js/main.js"></script>
-
+            <script src="assets/js/language.js"></script>
     </body>
 </html>
 
