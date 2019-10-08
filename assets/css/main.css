@@ -1673,6 +1673,7 @@ input, select, textarea {
         float: right;
         word-spacing: 0.5rem;
         width: 100%;
+        margin-bottom: -1rem;
     }
 
     span.lang_bullet {

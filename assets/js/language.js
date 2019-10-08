@@ -9,7 +9,7 @@ $(function () {
         "en": {
                 "_welcome1": "Together with their families",
                 "_welcome2": "Request the pleasure of your company at their wedding ceremony",
-                "_welcome3": "7 December 2019 15:00-20:00",
+                "_welcome3": "7th December 2019 15:00-20:00",
                 "_welcome4": "Bosphorus Palace Hotel, Istanbul",
                 "_venue": "Venue",
                 "_timeline": "Timeline",
@@ -46,8 +46,8 @@ $(function () {
         });
     };
 
-    // Set initial language to English
-    set_lang(dictionary.tr);
+    // Set initial language
+    set_lang(dictionary.en);
   
     $("#language-tr").click(function(e) { set_lang(dictionary.tr)});
     $("#language-en").click(function(e) { set_lang(dictionary.en)});
