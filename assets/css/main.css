@@ -1684,3 +1684,15 @@ input, select, textarea {
     .lang_text {
         display: inline;
     }
+
+/* RSVP */
+    .rsvp-fields {
+        transition: all 1.0s linear;
+        -webkit-transition: all 1.0s linear;
+        max-height: 0px;
+        overflow: hidden;
+    }
+
+    .rsvp-fields.show {
+        max-height: 1000px;
+    }

@@ -1,11 +1,10 @@
 /*
     Adapted from https://stackoverflow.com/questions/13427723/jquery-language-switcher
 */
-$(function () {
+(function ($) {
     "use strict";
-    var dictionary, set_lang;
-  
-    dictionary = {
+   
+    jQuery.lang_dictionary = {
         "en": {
                 "_welcome1": "Together with their families",
                 "_welcome2": "Request the pleasure of your company at their wedding ceremony",
@@ -28,7 +27,7 @@ $(function () {
                 "_timeline_meal": "Meal",
                 "_timeline_starter1": "Hors d'oeuvres",
                 "_timeline_starter2": "Appetizer",
-                "_timeline_main": "Main - (Meat) | (Veg) | (Vegan)",
+                "_timeline_main": "Main - Meat/Veg/Vegan",
                 "_timeline_dessert": "Dessert",
                 "_timeline_teacoffee": "Tea/Coffee",
                 "_timeline_drinks2": "Soft drinks",
@@ -37,6 +36,14 @@ $(function () {
                 "_rsvp_applecal" : "Add to Apple Calendar",
                 "_rsvp_googlecal" : "Add to Google Calendar",
                 "_rsvp_microsoftcal" : "Add to Microsoft Calendar",
+                "_rsvp_guestname" : "Guest Name",
+                "_rsvp_attending" : "Attending",
+                "_rsvp_attending_yes": "Yes",
+                "_rsvp_attending_no" : "No",
+                "_rsvp_diet" : "Dietary Requirements (optional)",
+                "_rsvp_diet_placeholder" : "Enter dietary restrictions/ food allergies",
+                "_rsvp_button_addguest" : "Add Guest",
+                "_rsvp_button_submit" : "Send RSVP",
         },
         "tr": {
                 "_welcome1": "AİLELERİ İLE BİRLİKTE",
@@ -60,7 +67,7 @@ $(function () {
                 "_timeline_meal": "Yemek",
                 "_timeline_starter1": "Ordövr Tabağı",
                 "_timeline_starter2": "Appetizer",
-                "_timeline_main": "Ana Yemek - (Kuzu Tandır) | (Vejetaryen) | (Vegan)",
+                "_timeline_main": "Ana Yemek - Kuzu Tandır/Vejetaryen/Vegan",
                 "_timeline_dessert": "Tatlı",
                 "_timeline_teacoffee": "Çay/Kahve",
                 "_timeline_drinks2": "Alkolsüz içecekler",
@@ -69,24 +76,50 @@ $(function () {
                 "_rsvp_applecal" : "Apple Takvime Ekle",
                 "_rsvp_googlecal" : "Google Takvime Ekle",
                 "_rsvp_microsoftcal" : "Microsoft Takvime Ekle",
+                "_rsvp_guestname" : "A",
+                "_rsvp_attending" : "AA",
+                "_rsvp_attending_yes": "AAA",
+                "_rsvp_attending_no" : "AAAA",
+                "_rsvp_diet" : "AAAAA",
+                "_rsvp_diet_placeholder" : "AAAAAA",
+                "_rsvp_button_addguest" : "AAAAAAA",
+                "_rsvp_button_submit" : "AAAAAAAA",
         }
     };
 
     // Function for swapping dictionaries
-    set_lang = function (dictionary) {
+    jQuery.set_lang = function (dictionary) {
         $("[data-translate]").text(function () {
             var key = $(this).data("translate");
             if (dictionary.hasOwnProperty(key)) {
                 return dictionary[key];
             }
         });
+        $("[data-translate-value]").val(function () {
+            var key = $(this).data("translate-value");
+            if (dictionary.hasOwnProperty(key)) {
+                return dictionary[key];
+            }
+        });
+         $("[data-translate-placeholder]").attr("placeholder", function () {
+            var key = $(this).data("translate-placeholder");
+            if (dictionary.hasOwnProperty(key)) {
+                return dictionary[key];
+            }
+        });
     };
-
+ 
     // Set initial language
-    set_lang(dictionary.en);
+    jQuery.current_language = $.lang_dictionary.en;
+    $.set_lang($.current_language);
   
-    $("#language-tr").click(function(e) { set_lang(dictionary.tr)});
-    $("#language-en").click(function(e) { set_lang(dictionary.en)});
+    $("#language-tr").click(function(e) {
+        $.current_language = $.lang_dictionary.tr
+        $.set_lang($.current_language)
+    });
+    $("#language-en").click(function(e) {
+        $.current_language = $.lang_dictionary.en
+        $.set_lang($.current_language)
+    });
 
-});
-
+})(jQuery);
