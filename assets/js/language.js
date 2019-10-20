@@ -76,14 +76,14 @@
                 "_rsvp_applecal" : "Apple Takvime Ekle",
                 "_rsvp_googlecal" : "Google Takvime Ekle",
                 "_rsvp_microsoftcal" : "Microsoft Takvime Ekle",
-                "_rsvp_guestname" : "A",
-                "_rsvp_attending" : "AA",
-                "_rsvp_attending_yes": "AAA",
-                "_rsvp_attending_no" : "AAAA",
-                "_rsvp_diet" : "AAAAA",
-                "_rsvp_diet_placeholder" : "AAAAAA",
-                "_rsvp_button_addguest" : "AAAAAAA",
-                "_rsvp_button_submit" : "AAAAAAAA",
+                "_rsvp_guestname" : "AD SOYAD",
+                "_rsvp_attending" : "KATILIM DURUMU",
+                "_rsvp_attending_yes": "EVET",
+                "_rsvp_attending_no" : "HAYIR",
+                "_rsvp_diet" : "DİYET GEREKSİNİMLERİ (İSTEĞE BAĞLI)",
+                "_rsvp_diet_placeholder" : "Diyet tercihlerinizi ve/veya alerjilerinizi giriniz",
+                "_rsvp_button_addguest" : "MİSAFİR EKLE",
+                "_rsvp_button_submit" : "GÖNDER",
         }
     };
 
