@@ -66,7 +66,7 @@
                 "_timeline_ceremony": "Nikâh",
                 "_timeline_meal": "Yemek",
                 "_timeline_starter1": "Ordövr Tabağı",
-                "_timeline_starter2": "Appetizer",
+                "_timeline_starter2": "Ara Sıcak",
                 "_timeline_main": "Ana Yemek - Kuzu Tandır/Vejetaryen/Vegan",
                 "_timeline_dessert": "Tatlı",
                 "_timeline_teacoffee": "Çay/Kahve",
